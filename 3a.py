@@ -1,0 +1,6 @@
+sentence = input("enter a sentence: ")
+num_words = len(sentence.split())
+num_digits = sum(c.isdigit() for c in sentence)
+num_uppercase = sum(c.isupper() for c in sentence)
+num_lowercase = sum(c.islower() for c in sentence)
+print(num_words, num_lowercase, num_uppercase, num_digits)
